@@ -7,7 +7,7 @@ import android.arch.persistence.room.PrimaryKey;
 import com.devappan.simplemoney.constants.Constants;
 
 @Entity(tableName = Constants.NAME_TABLE_TRANSACTIONS)
-public class Transactions {
+public class Transaction {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = Constants.NAME_COLUMN_ID)
     private int id;
