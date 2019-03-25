@@ -47,11 +47,11 @@ public class Transactions {
     }
 
     public String getTipe() {
-        return tipe;
+        return type;
     }
 
-    public void setTipe(String tipe) {
-        this.tipe = tipe;
+    public void setTipe(String type) {
+        this.type = type;
     }
 
     public int getDatatime() {
