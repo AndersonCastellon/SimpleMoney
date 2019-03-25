@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'easymvp'
 
 android {
     compileSdkVersion 28
