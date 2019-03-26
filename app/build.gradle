@@ -1,5 +1,5 @@
 apply plugin: 'com.android.application'
-apply plugin: 'easymvp'
+apply plugin: 'easymvp-rx2'
 
 android {
     compileSdkVersion 28
@@ -34,4 +34,8 @@ dependencies {
 
     implementation 'com.jakewharton:butterknife:10.1.0'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.7'
 }

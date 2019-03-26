@@ -8,4 +8,5 @@ public class Constants {
     public static final String NAME_COLUMN_TYPE = "tipe";
     public static final String NAME_COLUMN_DATATIME = "datatime";
     public static final String NAME_COLUMN_AMOUNT = "amount";
+    public static final String NAME_DATABASE = "database";
 }
