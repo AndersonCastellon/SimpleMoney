@@ -2,4 +2,5 @@
 <resources>
     <dimen name="textsize_amount_account">45sp</dimen>
     <dimen name="padding_account_amount">16dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
 </resources>
