@@ -16,11 +16,13 @@ public class Transaction {
     @ColumnInfo(name = Constants.NAME_COLUMN_DESCRIPTION)
     private String description;
     @ColumnInfo(name = Constants.NAME_COLUMN_TYPE)
-    private String type;
+    private int type;
     @ColumnInfo(name = Constants.NAME_COLUMN_DATATIME)
     private int datatime;
     @ColumnInfo(name = Constants.NAME_COLUMN_AMOUNT)
     private float amount;
+    @ColumnInfo(name = Constants.NAME_COLUMN_IMAGE)
+    private String image;
 
     public int getId() {
         return id;
@@ -46,11 +48,11 @@ public class Transaction {
         this.description = description;
     }
 
-    public String getType() {
+    public int getType() {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType(int type) {
         this.type = type;
     }
 
@@ -68,5 +70,13 @@ public class Transaction {
 
     public void setAmount(float amount) {
         this.amount = amount;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }

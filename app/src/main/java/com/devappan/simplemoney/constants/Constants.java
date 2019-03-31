@@ -9,4 +9,6 @@ public class Constants {
     public static final String NAME_COLUMN_DATATIME = "datatime";
     public static final String NAME_COLUMN_AMOUNT = "amount";
     public static final String NAME_DATABASE = "database";
+    public static final String NAME_COLUMN_IMAGE = "image";
+    public static final int VALUE_EXPENSES = 0;
 }

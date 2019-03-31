@@ -3,4 +3,9 @@
     <dimen name="textsize_amount_account">45sp</dimen>
     <dimen name="padding_account_amount">16dp</dimen>
     <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="img_transaction">65dp</dimen>
+    <dimen name="textsize_name_transaction">16sp</dimen>
+    <dimen name="textsize_datetime_transaction">8sp</dimen>
+    <dimen name="textsize_description_transaction">14sp</dimen>
+    <dimen name="textsize_amount_transaction">35sp</dimen>
 </resources>

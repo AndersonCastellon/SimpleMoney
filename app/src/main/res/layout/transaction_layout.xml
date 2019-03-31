@@ -7,19 +7,79 @@
     android:padding="@dimen/padding_8dp">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cv_transaction"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_8dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_8dp">
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/imageView"
+                android:layout_width="@dimen/img_transaction"
+                android:layout_height="@dimen/img_transaction"
+                tools:srcCompat="@tools:sample/avatars[1]" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars[1]" />
+                android:orientation="vertical"
+                android:paddingStart="@dimen/padding_8dp"
+                android:paddingEnd="@dimen/padding_8dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_name_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+                    android:textSize="@dimen/textsize_name_transaction" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_description_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:text="Descripcion de la transaccion"
+                    android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+                    android:textSize="@dimen/textsize_description_transaction" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_datetime_transaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:text="29-mar-2019"
+                    android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/textsize_datetime_transaction" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_amount_transaction"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/ic_arrow_upward_green"
+                android:gravity="center"
+                android:text="100"
+                android:textSize="@dimen/textsize_amount_transaction" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/transaction_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:paddingStart="@dimen/padding_8dp"
+                android:src="@drawable/ic_more_vert_black"
+                tools:ignore="RtlSymmetry" />
+
         </androidx.appcompat.widget.LinearLayoutCompat>
+
+
     </androidx.cardview.widget.CardView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
