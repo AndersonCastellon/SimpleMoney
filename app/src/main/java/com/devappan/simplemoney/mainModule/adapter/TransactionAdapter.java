@@ -9,6 +9,7 @@ import com.devappan.simplemoney.db.entity.Transaction;
 import com.devappan.simplemoney.mainModule.holder.TransactionViewHolder;
 import com.devappan.simplemoney.aplication.BaseViewHolder;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import androidx.annotation.NonNull;
@@ -19,7 +20,7 @@ public class TransactionAdapter extends RecyclerView.Adapter<BaseViewHolder> {
     private List<Transaction> transactions;
 
     public TransactionAdapter() {
-
+        transactions = new ArrayList<>();
     }
 
     public void set(List<Transaction> transactions) {
