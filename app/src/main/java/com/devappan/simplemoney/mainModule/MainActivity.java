@@ -1,5 +1,6 @@
 package com.devappan.simplemoney.mainModule;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.andrognito.flashbar.Flashbar;
@@ -8,6 +9,7 @@ import com.devappan.simplemoney.db.entity.Transaction;
 import com.devappan.simplemoney.mainModule.adapter.TransactionAdapter;
 import com.devappan.simplemoney.mainModule.holder.TransactionItemClick;
 import com.devappan.simplemoney.mainModule.presenter.MainPresenter;
+import com.devappan.simplemoney.newTransactionModule.NewTransactionActivity;
 
 import java.util.List;
 
@@ -58,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements MainView, Transac
 
     @OnClick(R.id.fab_new)
     public void onViewClicked() {
+        Intent intent = new Intent(this, NewTransactionActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -87,5 +91,8 @@ public class MainActivity extends AppCompatActivity implements MainView, Transac
 
     private void setUpTollbar() {
         setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowTitleEnabled(false);
+        }
     }
 }

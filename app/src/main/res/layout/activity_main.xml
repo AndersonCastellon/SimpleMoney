@@ -33,8 +33,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
-        android:background="@android:color/white"
-        android:backgroundTint="@android:color/white"
+        android:background="@color/colorPrimary"
         android:fitsSystemWindows="true"
         android:layout_width="match_parent"
         android:layout_height="192dp"
@@ -69,13 +68,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="$ 200"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="@dimen/textsize_amount_account" />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@android:color/darker_gray" />
+                    android:background="@android:color/white" />
 
                 <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
@@ -90,13 +89,13 @@
                         android:drawableLeft="@drawable/ic_arrow_upward_green"
                         android:paddingEnd="@dimen/padding_account_amount"
                         android:text="$ 200"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/textsize_amount_account" />
 
                     <View
                         android:layout_width="1dp"
                         android:layout_height="match_parent"
-                        android:background="@android:color/darker_gray" />
+                        android:background="@android:color/white" />
 
                     <androidx.appcompat.widget.AppCompatTextView
                         android:layout_width="wrap_content"
@@ -104,7 +103,7 @@
                         android:drawableLeft="@drawable/ic_arrow_downward_red"
                         android:paddingStart="@dimen/padding_account_amount"
                         android:text="$ 95"
-                        android:textColor="@android:color/black"
+                        android:textColor="@android:color/white"
                         android:textSize="@dimen/textsize_amount_account" />
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
